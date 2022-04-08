@@ -51,7 +51,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.5rem;
+	font-size: 1.5rem;
 	margin-top: 3rem;
 	font-weight: 600;
 }
@@ -98,46 +98,12 @@ ol li {
 	padding: 0;
 }
 
-
 img.wide {
 	max-width: 100%;
 }
 
 #table-of-content {
 	margin: 3rem 0 4rem 0;
-}
-
-#writing img {
-	margin-bottom: -0.5rem;
-	margin-left: -0.1rem;
-}
-
-ul#songs, ul#essays, ul#presentations {
-	list-style-type: none;
-	margin-top: 1.5rem;
-	font-size: 1.05rem;
-}
-
-ul#songs li img {
-	position: absolute;
-	margin-left: -1.6rem;
-}
-
-ul#essays li img, ul#presentations li img {
-	position: absolute;
-	margin-left: -1.6rem;
-	margin-top: 0.2rem;
-}
-
-
-#essays .meta a:link, #essays .meta a:visited, #songs .meta a:link, #songs .meta a:visited  {
-	color: #555;
-	font-weight: 500;
-}
-
-
-#essays .meta a:hover, #songs .meta a:hover {
-	color: #333;
 }
 
 .meta {
@@ -212,10 +178,12 @@ article table  {
 	font-size: 0.85em;
 	margin: 0.5rem 0 2.5rem 0;
 }
+
 article table td, table th {
   border: 1px solid lightgrey;
 	padding: 0.6%;
 }
+
 article table tr:nth-child(even) {
   background: BlanchedAlmond;
 }
@@ -224,6 +192,7 @@ article table thead {
   background: MidnightBlue;
   border-bottom: 2px solid lightgrey;
 }
+
 article table thead th {
   font-size: 13px;
   font-weight: bold;
