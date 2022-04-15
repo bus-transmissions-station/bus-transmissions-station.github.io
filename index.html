@@ -26,7 +26,11 @@
 
             <article>
                 <h2 id="show">Show</h2>
-                <p></p>
+                <p>
+                    <div class="myCast"
+                         id="bus-transmisisons">
+                    </div>
+                </p>
             </article>
 
             <article>
@@ -44,5 +48,43 @@
                 &copy; Copyright Bus Transmissions <span id="copyright-year"></span>
             </footer>
         </div>
+
+        <script src='https://code.jquery.com/jquery-3.0.0.min.js'></script>
+
+        <script>
+            $('<link>')
+                .appendTo('head')
+                .attr({
+                    type: 'text/css',
+                    rel: 'stylesheet',
+                    href: 'https://streemlion.com/player/css/player.css'
+                });
+
+            $('<script>')
+                .appendTo('body')
+                .attr({
+                    src: 'https://streemlion.com/player/js/player.js'
+                });
+        </script>
+
+        <script>
+            function foo() {
+                $('body')
+                    .append("<script>$('#bus-transmissions').myCast({" +
+                        "URL: 'http://https://station.bustransmissions.live:80'," +
+                        "version: 'icecast'," +
+                        "mount_point: 'live.mp3'," +
+                        "logo: ''," +
+                        "vertical_layout: false," +
+                        "bg: 'grey'," +
+                        "accent: 'grey'," +
+                        "blur: false," +
+                        "autoplay: false," +
+                        "enable_cors: true, " +
+                        "})</\script>");
+            };
+
+            setTimeout(foo, 200);
+        </script>
     </body>
 </html>
