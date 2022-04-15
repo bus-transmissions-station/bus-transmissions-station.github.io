@@ -21,15 +21,37 @@
                     <p class="lede">
                         An Unscreened Live Call-In Show - Live From A Bus
                     </p>
+                    <p>
+                        We take live, un-screened calls on any topic.
+                    </p>
                 </header>
             </article>
 
             <article>
-                <h2 id="show">Show</h2>
+                <h2 id="show">Listen To The Show</h2>
                 <p>
-                    <div class="myCast"
-                         id="bus-transmisisons">
-                    </div>
+                    Periodically live, check back here for the stream
+                    or listen in your player of choice via
+                </p>
+                <p>
+                    <a href="https://station.bustransmissions.live/live.mp3">
+                        https://station.bustransmissions.live/live.mp3
+                    </a>
+                </p>
+                <p>
+                    <audio autoplay="true"
+                           controls>
+                        <source src="https://station.bustransmissions.live/live.mp3"
+                                type="audio/mp3">
+                    </audio>
+                </p>
+            </article>
+
+            <article>
+                <h2 id="call-in">Call In</h2>
+                <p>
+                    When we're live, we take calls at
+                    <a href="tel:4022302978">(402) 230-2978</a>
                 </p>
             </article>
 
@@ -48,43 +70,5 @@
                 &copy; Copyright Bus Transmissions <span id="copyright-year"></span>
             </footer>
         </div>
-
-        <script src='https://code.jquery.com/jquery-3.0.0.min.js'></script>
-
-        <script>
-            $('<link>')
-                .appendTo('head')
-                .attr({
-                    type: 'text/css',
-                    rel: 'stylesheet',
-                    href: 'https://streemlion.com/player/css/player.css'
-                });
-
-            $('<script>')
-                .appendTo('body')
-                .attr({
-                    src: 'https://streemlion.com/player/js/player.js'
-                });
-        </script>
-
-        <script>
-            function foo() {
-                $('body')
-                    .append("<script>$('#bus-transmissions').myCast({" +
-                        "URL: 'http://https://station.bustransmissions.live:80'," +
-                        "version: 'icecast'," +
-                        "mount_point: 'live.mp3'," +
-                        "logo: ''," +
-                        "vertical_layout: false," +
-                        "bg: 'grey'," +
-                        "accent: 'grey'," +
-                        "blur: false," +
-                        "autoplay: false," +
-                        "enable_cors: true, " +
-                        "})</\script>");
-            };
-
-            setTimeout(foo, 200);
-        </script>
     </body>
 </html>
